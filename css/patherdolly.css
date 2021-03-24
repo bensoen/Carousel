@@ -1,0 +1,794 @@
+@import url('reset.css');
+
+
+body{
+	font-family: Arial, Verdana, 微軟正黑體;
+    line-height: 1.6;   
+}
+
+
+/* <!---- 最外層包裝 開始 ----> */
+
+.patherdolly{
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color:#0B0543;
+    width: 1200px;
+    height: 4260px;
+    /* padding: 50px; */
+}
+
+.pather-k{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* <!---- 主選單天 ---->   */
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    /* border: 1px solid red; */
+}
+
+.btn .fa{
+    display: none;
+}
+
+.top a img{
+    width: 145px;
+    height: 95px;
+    border-radius: 18%;
+    padding-bottom: 10px;
+}
+
+.top img{ 
+    padding: 30px 30px;
+}
+
+.top ul {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.top li a{
+    font-size: 24px;
+    font-weight: bold;
+    color:#E3C3C3;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.top li a:hover{
+    color: tomato;
+    border-bottom: 2px solid yellow;
+    box-sizing: border-box;
+}
+
+.top ol {
+	display: none; 
+    position: absolute;
+    /* outline: 1px solid ; */
+}    
+
+.top  ol a{
+	display:block;
+	text-align: center;
+	text-decoration: none;
+    line-height: 40px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.top ul>li:hover ol{
+    display: block;
+}
+
+/* top鈕 */
+#gotop{
+    position: fixed;
+    border-radius: 50px;
+    right: 35px;
+    bottom: 30px;
+    padding: 10px 20px;
+    font-size: 25px;
+    background: rgba(228, 211, 211, 0.36);
+    color: #FAFCFD;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+
+/* <!---- 主視覺大圖 ----> */
+
+.pather-pic{
+    display: block;    
+}
+
+/* <!---- 側邊欄區塊 ----> */
+
+.pather-tex{
+    display: block;
+    /* border: 1px solid red; */
+    width: 200px;
+    margin-top: 90px;
+    padding-left: 50px;
+}
+
+.pather-tex h1{
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+}
+
+.pather-tex a{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: yellow;
+    line-height: 80px;
+}
+
+/* <!---- 中間器材介紹 ---->  */
+
+.pather-intro{
+    display: block;
+    /* border: 1px solid red; */
+    width: 900px;
+    margin: -380px 0 0 285px;
+}
+
+.pather-in-do {
+    display: block;
+    /* border: 1px solid red; */
+    height: 600px;
+}
+
+
+.pather-in-do .in-do-wd{
+    font-size: 40px;
+    font-weight: bolder;
+    color:yellow;
+    margin-left: 50px;
+}
+
+.line-a{
+    background-color: rgba(225, 225, 225, 0.5);
+    width: 800px;
+    height: 1px;
+    margin-left: 50px;
+}
+
+
+.pather-in-do ul{
+    display: flex;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+}
+
+.pather-in-do li{
+    margin:50px 30px 0 20px ;
+    padding-left: 40px;
+    line-height: 20px;    
+}
+
+.pather-in-do li h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.pather-in-do li h3{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.pather-in-do li p{
+    font-size: 16px;
+    color: red;
+    text-align: center;
+}
+
+/* <!----中間升降機區塊 ---->  */
+
+.pather-in-jib {
+    display: block;
+    /* border: 1px solid red; */
+    height: 600px;
+    margin-top: 200px;
+}
+
+.pather-in-jib .in-jib-wd{
+    font-size: 40px;
+    font-weight: bolder;
+    color:yellow;
+    margin-left: 50px;
+}
+
+.line-b{
+    background-color: rgba(225, 225, 225, 0.5);
+    width: 800px;
+    height: 1px;
+    margin-left: 50px;
+}
+
+.pather-in-jib ul{
+    display: flex;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+}
+
+.pather-in-jib li{
+    margin:50px 30px 0 20px ;
+    padding-left: 40px;
+    line-height: 20px;    
+}
+
+.pather-in-jib li h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.pather-in-jib li h3{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* <!----中間場務器材區塊 ---->  */
+
+.pather-in-oth {
+    display: block;
+    /* border: 1px solid red; */
+    height: 900px;
+    margin-top: 50px;
+}
+
+.pather-in-oth .in-oth-wd{
+    font-size: 40px;
+    font-weight: bolder;
+    color:yellow;
+    margin-left: 50px;
+}
+
+.line-c{
+    background-color: rgba(225, 225, 225, 0.5);
+    width: 800px;
+    height: 1px;
+    margin-left: 50px;
+}
+
+.pather-in-oth ul{
+    display: flex;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+}
+
+.pather-in-oth li{
+    margin:50px 30px 0 20px ;
+    padding-left: 40px;
+    line-height: 20px;    
+}
+
+.pather-in-oth li h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.pather-in-oth li h3{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.pather-in-oth li p{
+    font-size: 16px;
+    color: red;
+    text-align: center;
+}
+
+/* <!----底下key布區塊 ---->  */
+
+.pather-in-key {
+    display: block;
+    /* border: 1px solid red; */
+    height: 900px;
+    margin-top: 20px;
+}
+
+.pather-in-key .in-key-wd{
+    font-size: 40px;
+    font-weight: bolder;
+    color:yellow;
+    margin-left: 50px;
+}
+
+.line-d{
+    background-color: rgba(225, 225, 225, 0.5);
+    width: 800px;
+    height: 1px;
+    margin-left: 50px;
+}
+
+.pather-in-key ul{
+    display: flex;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+}
+
+.pather-in-key li{
+    margin:50px 30px 0 20px ;
+    padding-left: 30px;
+    line-height: 20px;    
+}
+
+.pather-in-key li h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.pather-in-key li h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.pather-in-key li p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 30px;
+}
+
+/* <!----底層區塊 ---->  */
+
+.bt-bot-bnt{
+    display: block;
+    margin-left: -300PX;
+}
+
+
+.bt-bot-bnt ul{
+    display: flex;
+    justify-content: center;  
+    margin-top: 150px;  
+}
+
+.pather-k .bt-bot-bnt li{
+    /* outline: 2px solid red; */
+    width: 30px;
+    height: 30px;
+    padding-top: 70px;
+}
+
+.pather-k .bt-bot-bnt a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/ICON/icon_sprite.png);
+    background-repeat: no-repeat;
+    background-color: none;
+}
+
+.bt-bot-bnt .btn1 a{background-position: 3px 2px;}
+.bt-bot-bnt .btn2 a{background-position: 3px -45px;}
+.bt-bot-bnt .btn3 a{background-position: 3px -68px;}
+.bt-bot-bnt .btn4 a{background-position: 3px -93px;}
+.bt-bot-bnt .btn5 a{background-position: 3px -21px;}
+
+
+
+.pather-k footer{
+    font-size: 24px;
+    line-height: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*------------------ 414 --------------------*/
+@media screen and (max-width: 414px){
+
+.patherdolly{
+    width: 100%;
+    height: 100%;
+}
+
+.pather-k{
+    width: 100%;
+    padding: 0;
+}
+
+/* <!---- 主選單天 ---->     */
+
+.top{
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: #785454;
+    position: relative;
+}
+
+.btn .fa{
+    display: block;
+}
+
+.btn{
+    color: #0B0543;
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 30px;
+}
+
+.top a label {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #0B0543;
+}
+
+.top a img{
+    width: 90px;
+    height: 55px;
+    margin-left: -10px;
+    margin-top: -15px;
+}
+
+
+.top .nav{
+    padding: 0px;
+    width: 100%; 
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 1;
+}
+
+.none{
+    display:block !important;
+}
+
+.top li {
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    background-color: rgba(51,51,51,.9 );
+}
+
+.top li a{
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    font-size: 20px;
+}
+
+.top nav:hover{
+    border-bottom: 20px solid #fff; 
+}
+
+.top ol {
+    background-color: white;
+    opacity:.9;
+} 
+
+
+/* top鈕 */
+#gotop{
+    display: block;
+    border-radius: 30px;
+    background:  rgba(228, 211, 211, 0.36);
+    position: fixed;
+    border-radius: 50px;
+    right: 10px;
+    bottom: 20px;
+    padding: 0px 10px;
+}
+
+/* <!---- 主視覺大圖 ----> */
+
+.pather-pic img{
+    display: block;
+    width: 100%;
+}
+
+/* <!---- 側邊欄區塊 ----> */
+
+.pather-tex{
+    display: none;
+    padding: 0;
+}
+
+/* <!---- 中間器材介紹 ---->  */
+
+.pather-intro{  
+    display: block; 
+    width: 100px;
+    margin-top: 50px;
+}
+
+.pather-in-do{
+    width: 400px;
+    /* border: 1px solid red; */
+    margin: 0 -300px;
+}
+
+.in-do-wd h1{
+    display: inline-block;
+    font-size: 28px;
+}
+
+.pather-in-do ul{ 
+    width: 100%;
+}
+
+.pather-in-do li {
+    /* display:block; */
+    width: 70px;
+    margin: 30px 30px;
+    padding-left: 50px;
+}
+
+.pather-in-do li img{
+    /* display:block; */
+    width: 150px;
+    margin: 0 -25px;
+}
+
+.pather-in-do li h2{
+    width: 100px;
+    font-size: 16px;
+}
+
+.pather-in-do li h3{
+    width: 100px;
+    font-size: 12px;
+    line-height: 5px;
+}
+
+.pather-in-do  li p{
+    width: 100px;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.line-a{
+    display: inline-block;
+    width: 350px;
+}
+
+.pather-in-jib{
+    width: 400px;
+    height: 350px;
+    /* border: 1px solid red; */
+    margin: 0 -300px;
+}
+
+.in-jib-wd h1{
+    display: inline-block;
+    font-size: 28px;
+}
+
+.pather-in-jib ul{ 
+    width: 100%;
+}
+
+.pather-in-jib li {
+    /* display:block; */
+    width: 70px;
+    margin: 30px 30px;
+    padding-left: 50px;
+}
+
+.pather-in-jib li img{
+    /* display:block; */
+    width: 150px;
+    margin: 0 -25px;
+}
+
+.pather-in-jib li h2{
+    width: 100px;
+    font-size: 16px;
+}
+
+.pather-in-jib li h3{
+    width: 100px;
+    font-size: 12px;
+    line-height: 5px;
+}
+
+.line-b{
+    display: inline-block;
+    width: 350px;
+}
+
+.pather-in-do{
+    width: 400px;
+    /* border: 1px solid red; */
+    margin: 0 -300px;
+}
+
+.in-do-wd h1{
+    display: inline-block;
+    font-size: 28px;
+}
+
+.pather-in-do ul{ 
+    width: 100%;
+}
+
+.pather-in-do li {
+    /* display:block; */
+    width: 70px;
+    margin: 30px 30px;
+    padding-left: 50px;
+}
+
+.pather-in-do li img{
+    /* display:block; */
+    width: 150px;
+    margin: 0 -25px;
+}
+
+.pather-in-do li h2{
+    width: 100px;
+    font-size: 16px;
+}
+
+.pather-in-do li h3{
+    width: 100px;
+    font-size: 12px;
+    line-height: 5px;
+}
+
+.line-b{
+    display: inline-block;
+    width: 350px;
+}
+
+.pather-in-oth{
+    width: 400px;
+    /* border: 1px solid red; */
+    margin: 0 -300px;
+}
+
+.in-oth-wd h1{
+    display: inline-block;
+    font-size: 28px;
+}
+
+.pather-in-oth ul{ 
+    width: 100%;
+}
+
+.pather-in-oth li {
+    /* display:block; */
+    width: 70px;
+    margin: 30px 30px;
+    padding-left: 50px;
+}
+
+.pather-in-oth li img{
+    /* display:block; */
+    width: 150px;
+    margin: 0 -25px;
+}
+
+.pather-in-oth li h2{
+    width: 100px;
+    font-size: 16px;
+}
+
+.pather-in-oth li h3{
+    width: 100px;
+    font-size: 12px;
+    line-height: 5px;
+}
+
+.pather-in-oth li p{
+    width: 100px;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.line-c{
+    display: inline-block;
+    width: 350px;
+}
+
+.pather-in-key{
+    width: 400px;
+    height: 500px;
+    /* border: 1px solid red; */
+    margin: 0 -300px;
+}
+
+.in-key-wd h1{
+    display: inline-block;
+    font-size: 28px;
+}
+
+.pather-in-key ul{ 
+    width: 100%;
+}
+
+.pather-in-key li {
+    /* display:block; */
+    width: 70px;
+    margin: 30px 30px;
+    padding-left: 50px;
+}
+
+.pather-in-key li img{
+     /* display:block; */
+    width: 150px;
+    margin: 0 -25px;
+}
+
+.pather-in-key li h2{
+    width: 100px;
+    font-size: 16px;
+}
+
+.pather-in-key li h3{
+    width: 100px;
+    font-size: 12px;
+    line-height: 5px;
+}
+
+.pather-in-key li p{
+    width: 100px;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.line-d{
+    display: inline-block;
+    width: 350px;
+} 
+
+.bt-bot-bnt{
+    width: 400px;
+    margin: 30px -285px;
+}
+
+.bt-bot-bnt ul{
+    height: 90px;
+}
+
+.bt-bot-bnt footer{
+    font-size: 12px;
+}
+
+}

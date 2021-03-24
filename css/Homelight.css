@@ -1,0 +1,920 @@
+@import url('reset.css');
+
+
+body{
+	font-family: Arial, Verdana, 微軟正黑體;
+    line-height: 1.6;    
+}
+
+.wrapperlight{
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color:#0B0543;
+    width: 1200px;
+    height: 1300px;
+    /* padding: 50px; */
+
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* <!---- 主選單天 ---->   */
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    /* border: 1px solid red; */
+
+}
+
+.btn .fa{
+    display: none;
+}
+
+.top a img{
+    width: 145px;
+    height: 95px;
+    border-radius: 18%;
+    padding-bottom: 10px;
+}
+
+.top img{ 
+    padding: 30px 30px;
+    
+}
+
+.top ul {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.top li a{
+    font-size: 24px;
+    font-weight: bold;
+    color:#E3C3C3;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.top li a:hover{
+    color: tomato;
+    border-bottom: 2px solid yellow;
+    box-sizing: border-box;
+}
+
+.top ol {
+	display: none; 
+    position: absolute;
+    /* outline: 1px solid ; */
+}    
+
+
+
+.top  ol a{
+	display:block;
+	text-align: center;
+	text-decoration: none;
+    line-height: 40px;
+    font-size: 20px;
+    padding-left: 20px;
+	
+}
+
+.top ul>li:hover ol{
+    display: block;    
+}
+
+/* top鈕 */
+#gotop {
+    position: fixed;
+    border-radius: 50px;
+    right: 35px;
+    bottom: 30px;
+    padding: 10px 20px;
+    font-size: 25px;
+    background: rgba(228, 211, 211, 0.36);
+    color: #FAFCFD;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* 主視覺大圖 */
+*{  
+    margin: 0;  
+    padding: 0;  
+    text-decoration: none;  
+}  
+#container{
+	margin:20px auto;
+	width: 1150px;
+	height: 600px;
+	border: 3px solid #333;
+	overflow: hidden; 
+	position: relative; 
+}
+
+#list{
+	width: -5400px;
+	height: 600px;
+	position: absolute;
+	z-index: 1;
+}
+
+#list img{
+	float: left;
+	width: 1150px;
+	height: 600px;
+}
+
+#buttons{
+    display: block;
+    /* border: 1px solid red; */
+    margin:  0 50%;
+    position: absolute;
+	height: 20px;
+	width: 90px;
+	z-index: 2;
+    bottom: 0px;	
+}
+
+#buttons span {  
+    cursor: pointer;  
+    float: left;  
+    border: 1px solid #fff;  
+    border-radius: 50%;  
+    height: 10px;  
+    width: 10px;  
+    margin-right: 5px;  
+    background:gray; 
+    opacity: .5;  
+}
+
+#buttons .on {  
+    background: #474550;  
+}   
+
+.arrow{
+	display: none;
+	cursor: pointer;
+	line-height: 40px;
+	text-align: center;
+	font-size: 30px;  
+	width: 40px;  
+    height: 40px; 
+    position: absolute;  
+    z-index: 2;  
+    top: 300px;  
+    color: #fff;
+    background:#474550 ;
+    opacity: .5;  
+}  
+
+.arrow:hover {  
+    background-color: #E98352;  
+}
+
+#container:hover .arrow {  
+    display: block;  
+}  
+
+#pre {  
+    left:0px;  
+}   
+
+#next {  
+    right:0px;  
+}  
+
+/* <!---- 新內容區塊 ----> */
+
+.sky{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    
+}
+
+.sky-inner{
+    display: block;
+    text-align: center;
+    background-color: white;
+    /* border: 1px solid red; */
+    width: 540px;
+    height: 280px;
+}
+
+.sky-inner h1{
+    display:block;
+    font-size: 45px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 30px;     
+}
+
+.sky-inner p{
+    font-size: 24px;
+    
+}
+
+.sky-pic img{
+    display: block;
+    width: 550px;
+    height: 282px; 
+}
+
+/* <!---- 列表商品 ----> */
+
+.white-bk{
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 0 auto;   
+}
+
+.lightequ{
+    margin: 0 auto;
+    background-color:#F5F54D ;
+    height: 500px;
+    margin-top: 120px;
+    margin-bottom: 140px;
+
+    position: relative;
+}
+
+.lightequ h1{
+    font-size: 40px;
+    font-weight: bolder;
+    color: red;
+    padding: 20px 40px;
+
+}
+
+.lightequ-inner ul{
+    display: flex;
+    justify-content: center;
+    margin-left: -30px;
+    
+}
+
+
+.lightequ-inner img{
+    width: 300px;
+    height: 180px;
+    margin-left: 30px;
+
+}
+
+.lightequ-inner h2{
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.lightequ-inner p{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.lightequ-inner a{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    
+    padding: 20px 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    line-height: .6;
+    height: 5px;
+    
+}
+
+
+/* <!----租借流程 ----> */
+
+.rental-br{
+    border-top: 2px solid #e5e5e5;
+    margin-bottom: 80px;  
+    height: 550px;
+    
+    
+} 
+
+.rental{
+    display: block;
+    height: 710px; 
+    margin: 0 -30px;
+}
+
+.rental h1{
+    font-size: 40px;
+    font-weight: bolder;
+    color: red;
+    padding: 20px 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding-top: 60px; 
+}
+
+.rental ul{
+    display: flex;
+    margin: 0 auto;     
+}
+
+.rental i{
+    display: block;
+    font-size: 80px;
+    margin: 20px 120px;
+}   
+
+.rental li:hover , .rental li:focus{
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    color:blue;
+}
+
+.rental h2{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 5px ;
+}
+
+.rental p{
+    font-size: 14px;
+    text-align: center;
+    margin: 0 30px ;
+}
+
+
+/* <!----底部活動區塊 ----> */
+
+.acty-bt{
+    display: block;
+    margin: 0 auto;
+    background-color:#0B0543;
+    width:  1200px;
+    height: 1700px;
+}
+
+.acty-btA{
+    margin: 0 auto;
+}
+
+.bt-top-wd {
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.bt-top-wd  .line {
+    display: inline-block;
+    background-color:  #e5e5e5;
+    width: 250px;
+    border: 3px solid #e5e5e5;
+}
+
+.bt-top-wd  .txt {
+    color: red;
+    font-size: 40px;
+    font-weight: bolder;
+    vertical-align: middle;
+    vertical-align: -20%;
+    margin: 0 30px;
+}
+
+.bt-top ul {
+    display: flex;    
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.bt-top img{
+    display: block;
+    margin: 30px 40px;
+}
+
+.bt-top a img{
+    transition: opacity 1s ease; 
+    /* width: 100%;
+    height: 100%; */
+}
+
+.bt-top a img:hover {
+    opacity: 0.5; 
+    
+}
+
+
+.bt-top a{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 100px;
+}
+
+.bt-top h2{
+    font-size: 16px;
+    font-weight: bold;
+    color:#e5e5e5;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+}
+
+
+.bt-bot ul {
+    display: flex;    
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.bt-bot img{
+    display: block;
+    margin: 30px 40px;
+}
+
+.bt-bot a img{
+    transition: opacity .5s ease; 
+}
+
+.bt-bot a img:hover {
+    opacity: 0.5;   
+}
+
+
+.bt-bot a{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 100px;
+}
+
+.bt-bot h2{
+    font-size: 16px;
+    font-weight: bold;
+    color:#e5e5e5;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 0;
+    margin-bottom: 100px;
+}
+
+.bt-bot-bt{
+    /* display: flex; */
+    background-image: url(../img/Homelight/home-bot.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    padding-top:200px ;   
+    height: 400px;   
+}
+
+.bt-bot-bt h3 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #785454;
+    text-align: left;
+    margin-top: -10px;
+    margin-left: 200px;
+    
+}
+
+.bt-bot-bt p{
+    font-size: 24px;
+    font-weight: bolder;
+    color: black;
+    text-align: left;
+    margin-left:170px;
+    line-height: 1.6;
+}
+
+
+.bt-bot-bnt ul{
+    display: flex;
+    justify-content: center;
+}
+
+.acty-bt .bt-bot-bnt li{
+    /* outline: 2px solid red; */
+    width: 30px;
+    height: 30px;
+    padding-top: 70px;
+}
+
+.acty-bt .bt-bot-bnt a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/ICON/icon_sprite.png);
+    background-repeat: no-repeat;
+    
+}
+
+.bt-bot-bnt .btn1 a{background-position: 3px 2px;}
+.bt-bot-bnt .btn2 a{background-position: 3px -45px;}
+.bt-bot-bnt .btn3 a{background-position: 3px -68px;}
+.bt-bot-bnt .btn4 a{background-position: 3px -93px;}
+.bt-bot-bnt .btn5 a{background-position: 3px -21px;}
+
+
+
+.acty-bt footer{
+    font-size: 24px;
+    line-height: 70px;
+    color: white;
+    text-align: center;
+}
+
+
+/*------------------ 414--------------------*/
+@media screen and (max-width: 414px){
+
+.wrapperlight{
+    width: 100%; 
+}
+
+.wrapper{
+    width: 100%;
+}
+
+.top{
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: #785454;
+    position: relative;
+}
+
+.btn .fa{
+    display: block;
+}
+
+.btn{
+    color: #0B0543;
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 30px;
+}
+
+.top a label {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #0B0543;
+}
+
+.top a img{
+    width: 90px;
+    height: 55px;
+    margin-left: -10px;
+    margin-top: -15px;
+}
+
+
+.top .nav{
+    padding: 0px;
+    width: 100%;  
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 1;
+}
+
+.none{
+    display:block !important;
+}
+
+.top li {
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    background-color: rgba(51,51,51,.9 );
+}
+
+.top li a{
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    font-size: 20px;
+}
+
+.top nav:hover{
+    border-bottom: 20px solid #fff; 
+}
+
+.top ol {
+    background-color: white;
+    opacity:.9;
+}  
+
+/* top鈕 */
+#gotop {
+    display: block;
+    border-radius: 30px;
+    background:  rgba(228, 211, 211, 0.36);;
+    position: fixed;
+    border-radius: 50px;
+    right: 10px;
+    bottom: 20px;
+    padding: 0px 10px;
+}
+
+/* <!---- 主視覺大圖 ----> */
+
+#container{
+    width:90%;
+    height: 100%;
+    display: block;
+    /* position: absolute;
+    z-index: 2; */
+}
+
+.slick-slide img{
+    width: 100%;    
+}
+
+.sky{
+    display: block;
+    width: auto;
+    height: 200px;   
+}
+
+.sky-inner{ 
+    width: 350px;
+    height: 200px;
+    margin-left: 10px;
+    padding: 0 20px;     
+}
+
+.sky-inner h1{
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.sky-inner p{
+    font-size: 16px;
+    padding-bottom: 40px;
+}
+
+.sky-pic img{
+    display: block;
+    width: 390px;
+    height: 200px;
+    margin-left:10px;
+    margin-bottom: 50px;
+}
+
+.white-bk{
+    width: 100%;
+     /* height: 300px; */
+    display: block;
+    padding-top: 100px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.lightequ{
+    float: none;
+    width: 100%;
+    height: 1300px;
+    box-sizing: border-box;
+    margin-bottom: -40px;
+}
+
+.lightequ h1{
+    font-size: 32px;
+    margin-left: 70px;
+    padding-top: 25px;
+    
+}
+
+.lightequ-inner h1{
+    display: block;
+    
+}
+
+.lightequ-inner img{
+    display: block;
+    width: 300px;  
+    height: 200px;
+}
+
+.lightequ-inner ul{
+    display: block;
+    margin: 20px 25px;
+}
+
+.lightequ-inner li{
+    display: block;
+    margin: 20px -5px;
+    padding: 15px 7px;
+}
+
+.lightequ-inner li h2{
+    margin-left:0px ;
+}
+
+.lightequ-inner li p{
+    display: block;
+    line-height: 20px;
+    margin: 0px;
+}
+
+.lightequ-inner .more-bar{
+    display: block;
+    margin: 15px 135px;
+    box-sizing: border-box;
+    font-size: 16px Thoma;
+    line-height: 3px;
+}
+
+
+/* <!----租借流程 ----> */
+
+.rental-br{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-top: none;
+    padding-top: 20px;    
+}
+
+.rental {
+    margin: 0;      
+}
+
+.rental h1{
+    font-size: 32px;
+}
+
+.rental ul{
+    display: flex;
+    margin: 0 15px;
+    flex-wrap: wrap;
+}
+
+.rental li{ 
+    width:50%;
+    height: 295px;
+    border: none;         
+}
+
+.rental i{ 
+    display: block;
+    font-size: 60px;
+    text-align: center;    
+    margin: 0 50px;    
+}
+
+.rental li h2{
+    font-size: 20px;
+}
+
+.rental li p{
+    font-size: 10px;
+}
+
+.acty-bt{
+    width: 100%;
+    height: 2265px;
+    display: block;
+    background-color: #0B0543;
+} 
+
+.acty-btA{
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+    margin-bottom: 0;
+    
+}
+
+.bt-top-wd .line{
+    display: none;
+}
+
+.bt-top-wd .txt{
+    font-size: 32px;
+}
+
+.bt-top ul{
+    display: block;
+    padding: 0;   
+}
+
+.bt-top li{
+    display: block;
+    margin:50px 0;
+}
+
+.bt-top img{
+    display: block;
+    margin: 0px -23px;
+}
+
+.bt-top li a{
+    display: block;
+    text-align: center;
+    margin: 5px 65px; 
+    font-size: 17px;
+}
+
+.bt-top li h2{
+    margin: 5px 65px;
+    font-size: 14px;
+}
+
+
+.bt-bot ul{
+    display: block;
+    padding: 0;   
+}
+
+.bt-bot li{
+    display: block;
+    margin:50px 0;
+}
+
+.bt-bot img{
+    display: block;
+    margin: 0px -23px;
+}
+
+.bt-bot li a{
+    display: block;
+    text-align: center;
+    margin: 5px 65px; 
+    font-size: 17px;
+}
+
+.bt-bot li h2{
+    margin: 5px 65px;
+    font-size: 14px;
+}
+
+
+
+/* 底下招募區塊 */
+.bt-bot-bt{
+    display: block;
+    width: 100%;
+    height: 45px;
+    background-position: right;
+    margin: 115px 0px;
+}
+
+.bt-bot-bt h3{
+    display: inline-block;
+    font-size: 28px;
+    margin: 50px 105px;
+    color: yellow;
+}
+
+
+.bt-bot-bt p{
+    display: none;
+}
+
+.bt-bot-bnt {
+    display: block;
+    margin-top: 0px;
+}
+
+.bt-bot-bnt ul{
+    height: 80px;
+
+}
+
+
+.bt-bot-bnt footer{
+    font-size: 12px;
+}
+
+}

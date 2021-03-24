@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="css/reset.css"rel="stylesheet" type="new.css"/>
+    <link rel="stylesheet" href="css/new.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>new01</title>
+</head>
+<body>
+
+<!---- 最外層包裝 開始 ---->
+<div class="new">    
+
+
+
+<!---- 主選單天 ---->  
+<nav class="top">
+    <a href="./Homelight.html"><img src="img/Homelight/logo1.png" alt="" /></a>
+    <span class="btn"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        
+  <ul class="nav">
+        <li><a href="./aboutme.html">關於我</a></li>
+        <li>
+            <a href="./photostudio.html">攝影棚介紹</a>
+            <ol>
+                <li><a href="./calendar.html">攝影棚檔期</a></li>
+            </ol>
+        </li>
+        <li><a href="./light.html">燈光器材</a></li>
+        <li><a href="./patherdolly.html">場務器材</a></li>
+        <li><a href="./contactus.html">聯絡方式</a></li>
+        <li><a href="./hotnews.html">最新消息</a></li>
+    </ul>
+
+    
+
+    
+</nav>
+
+
+<!---- 主視覺大圖 ---->
+
+<div class="new-pic">
+    <h1><a href="./Homelight.html">首頁</a> >> <a href="./hotnews.html">最新消息</a> >> 攝影棚活動優惠</h1>
+    <img src="img/new/activity01.jpg" alt="">    
+ 
+</div>
+
+
+<!---- 中間內容區塊 ---->
+
+<div class="new-wd">
+   <div class="new-wd-top">
+       <h1>【攝影棚租借優惠活動】</h1>
+   </div> 
+   
+   <div class="new-wd-ch" >
+       <h2>2020 / 11 / 05</h2>
+       <h3> 歲末時分，
+        我們網羅各式風格衣著和生活道具，
+        攝影棚租借優惠又來啦。<br>
+        
+        活動期間訂棚享有九折優惠。<br>
+        
+        <div class="line-aa"> ---------------------------------------------------------------------</div> <br></h3>
+        
+       <p>優惠期間: <br>
+          2021年11月15日~12月15日 <br>
+        
+          
+          
+        <div class="new-wd-bot">
+            <a href="./hotnews.html"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>
+               
+        </div>
+
+   <div class="bt-bot-bnt">
+    <ul>
+      <li class="btn1"><a href="#"></a></li>
+      <li class="btn2"><a href="#"></a></li>
+      <li class="btn3"><a href="#"></a></li>
+      <li class="btn4"><a href="#"></a></li>
+      <li class="btn5"><a href="#"></a></li>
+    </ul>
+
+    <footer>Copyright © 旋轉木馬  All rights reserved.</footer> 
+
+   </div>
+
+</div>
+</div>
+
+<!-- // 點擊漢堡選單 -->
+
+<script>
+    document.addEventListener("click", function (e) {
+        if (e.target.closest(".fa-bars")) {
+            ham(e);
+        }
+        });
+        function ham() {
+        var header_ul = document.getElementsByClassName("nav")[0];
+        var none = header_ul.classList.contains("none");
+        console.log(none);
+        if (!none) {
+            header_ul.classList.add("none");
+    
+    
+        } else {
+            header_ul.classList.remove("none");
+    
+        }
+    };
+    
+</script>
+    
+
+
+</body>
+</html>     

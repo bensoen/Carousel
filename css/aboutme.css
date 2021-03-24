@@ -1,0 +1,710 @@
+@import url('reset.css');
+
+
+body{
+	font-family: Arial, Verdana, 微軟正黑體;
+    line-height: 1.6;   
+}
+
+
+/* <!---- 最外層包裝 開始 ----> */
+
+.wrapper{
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color:#0B0543;
+    width: 1200px;
+    height:900px;
+    /* padding: 50px; */
+
+}
+
+.wrapper-a{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* <!---- 主選單天 ---->   */
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    /* border: 1px solid red; */
+
+}
+
+.btn .fa{
+    display: none;
+}
+
+.top a img{
+    width: 145px;
+    height: 95px;
+    border-radius: 18%;
+    padding-bottom: 10px;
+}
+
+.top img{ 
+    padding: 30px 30px;
+    
+}
+
+.top ul {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.top li a{
+    font-size: 24px;
+    font-weight: bold;
+    color:#E3C3C3;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.top li a:hover{
+    color: tomato;
+    border-bottom: 2px solid yellow;
+    box-sizing: border-box;
+}
+
+.top ol {
+	display: none; 
+    position: absolute;
+    /* outline: 1px solid ; */
+}    
+
+.top  ol a{
+	display:block;
+	text-align: center;
+	text-decoration: none;
+    line-height: 40px;
+    font-size: 20px;
+    padding-left: 20px;
+	
+}
+
+.top ul>li:hover ol{
+    display: block;
+    
+}
+
+#gotop {
+    position: fixed;
+    border-radius: 50px;
+    right: 35px;
+    bottom: 30px;
+    padding: 10px 20px;
+    font-size: 25px;
+    background: rgba(228, 211, 211, 0.36);
+    color: #FAFCFD;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+
+/* <!---- 主視覺大圖 ----> */
+
+.main-pic{
+    padding-bottom: 50px;
+}
+
+.main-pic h1{
+    font-size: 24px;
+    color:#E3C3C3 ;
+    padding-left: 30px;
+    padding-bottom: 40px;
+}
+
+.main-pic a{
+    text-decoration: none;
+    color: #E3C3C3;
+}
+
+.main-pic a:hover{
+    color: red;
+}
+
+/* <!---- 大標題區塊 ----> */
+
+.about-wd{
+    margin-top: 10px;
+}
+
+.about-wd h1{
+    font-size: 50px;
+    color: white;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.line{
+    display: inline-block;
+    background-color: yellow;
+    width: 300px;
+    border: 5px solid yellow;
+    margin-left: 60px;
+}
+
+/* <!---- 中間關於我區塊 ----> */
+
+.about-me{
+    /* display: flex; */
+    background-image:url(../img/aboutme/about-ch01.jpg);
+    height: 800px;
+    position: relative;
+
+} 
+
+.year{
+    font-size: 80px;
+    color: white;  
+}   
+
+.about-me p{
+    font-size: 24px;
+    color: white; 
+    line-height: 2;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+
+/* <!---- 底層介紹區塊 ----> */
+
+.about-me-bt{
+    background-color: #0B0543;
+
+}
+
+.bt-top ul{
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.bt-top-a {
+    background-image: url(../img/aboutme/about-bot01.jpg);
+    width: 450px;
+    height: 300px;   
+    transition: transform 1s ease;
+    /* margin: 0px 3px 0px 0px;  */
+    overflow: hidden;
+}
+
+
+
+.bt-top-a:hover , .bt-top-a:focus  {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+
+.bt-top-a h2{
+    font-size: 32px;
+    font-weight: bold;
+    color: yellow;
+    text-align: left;
+    padding: 40px 60px 0 ;
+}
+
+.bt-top-a p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 0 60px;
+}
+
+
+/* 上方右邊區塊 */
+
+.bt-top-b {
+    background-image: url(../img/aboutme/about-bot02.jpg);
+    width: 450px;
+    height: 300px;
+    /* border: 1px solid black; */
+    transition: transform 1s ease;
+    /* margin: 0px 3px 0px 3px; */
+    overflow: hidden;
+}
+
+
+
+.bt-top-b:hover , .bt-top-b:focus{
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.bt-top-b h2{
+    font-size: 32px;
+    font-weight: bold;
+    color: yellow;
+    text-align: left;
+    padding: 40px 60px 0 ;
+}
+
+.bt-top-b p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 0 60px;
+}
+
+/* 下方左邊區塊 */
+
+.bt-bot ul{
+    display: flex;
+    justify-content: center;
+}    
+
+
+.bt-bot-c {
+    background-image: url(../img/aboutme/about-bot03.jpg);
+    width: 450px;
+    height: 300px;
+    /* border: 1px solid black; */
+    transition: transform 1s ease;
+    overflow: hidden;
+}
+
+
+
+.bt-bot-c:hover , .bt-bot-c:focus{
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.bt-bot-c h2{
+    font-size: 32px;
+    font-weight: bold;
+    color: yellow;
+    text-align: left;
+    padding: 40px 60px 0 ;
+}
+
+.bt-bot-c p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 0 60px;
+}
+
+/* 下方右邊區塊 */
+
+.bt-bot-d {
+    background-image: url(../img/aboutme/about-bot04.jpg);
+    width: 450px;
+    height: 300px;
+    /* border: 1px solid black; */
+    transition: transform 1s ease;
+    overflow: hidden;
+}
+
+
+
+.bt-bot-d:hover , .bt-bot-d:focus{
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.bt-bot-d h2{
+    font-size: 32px;
+    font-weight: bold;
+    color: yellow;
+    text-align: left;
+    padding: 40px 60px 0 ;
+}
+
+.bt-bot-d p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 0 60px;
+}
+
+
+.bt-bot-bnt ul{
+    display: flex;
+    justify-content: center;  
+    margin-top: 80px;  
+}
+
+.wrapper-b .bt-bot-bnt li{
+    /* outline: 2px solid red; */
+    width: 30px;
+    height: 30px;
+    padding-top: 70px;
+}
+
+.wrapper-b .bt-bot-bnt a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/ICON/icon_sprite.png);
+    background-repeat: no-repeat;
+    background-color: none;
+    
+}
+
+.bt-bot-bnt .btn1 a{background-position: 3px 2px;}
+.bt-bot-bnt .btn2 a{background-position: 3px -45px;}
+.bt-bot-bnt .btn3 a{background-position: 3px -68px;}
+.bt-bot-bnt .btn4 a{background-position: 3px -93px;}
+.bt-bot-bnt .btn5 a{background-position: 3px -21px;}
+
+
+
+.wrapper-b footer{
+    font-size: 24px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    
+}
+
+/*------------------ 414 --------------------*/
+@media screen and (max-width: 414px){
+
+.wrapper{
+    width: 100%     
+}
+
+.wrapper-b{
+    width: 100%;
+}
+
+.top{
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: #785454;
+    position: relative;
+}
+
+.btn .fa{
+    display: block;
+}
+
+.btn{
+    color: #0B0543;
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 30px;
+}
+
+.top a label {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #0B0543;
+}
+
+.top a img{
+    width: 90px;
+    height: 55px;
+    margin-left: -10px;
+    margin-top: -15px;
+}
+
+.top .nav{
+    padding: 0px;
+    width: 100%; 
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 2;
+}
+
+
+.none{
+    display:block !important;    
+}
+
+.top li {
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    background-color: rgba(51,51,51,.9 );
+    /* display: none; */
+}
+
+.top li a{
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    font-size: 20px;
+}
+
+.top li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.top ol {
+    background-color: white;
+    opacity:.9;
+}   
+
+/* top鈕 */
+#gotop {
+    display: block;
+    border-radius: 30px;
+    background:  rgba(228, 211, 211, 0.36);;
+    position: fixed;
+    border-radius: 50px;
+    right: 10px;
+    bottom: 20px;
+    padding: 0px 10px;
+}
+
+/* <!---- 主視覺大圖 ----> */
+
+.main-pic h1{
+    display: none;
+}
+
+.main-pic img{
+    width: 100%;
+}
+
+/* <!---- 大標題區塊 ----> */
+
+.about-wd{
+    width: 100%;
+}
+
+.about-wd h1{
+    display: inline-block;
+    width: 200px;
+    font-size: 32px;
+    margin: 0 70px;
+}
+
+.line{
+    display: none;
+}
+
+/* <!---- 中間關於我區塊 ----> */
+
+.about-me{
+    display: block; 
+    width: 100%;
+    height: 500px;
+    background-image: center; 
+    position:absolute;
+    z-index: 1;
+    
+}
+
+.about-me .year{
+    display: block;
+    width: 350px;
+    font-size: 24px;
+    color: white;
+}
+
+.about-me p{
+    display: block;
+    width: 350px;
+    font-size: 16px;
+    color: white;
+    margin: -25px -40px;
+}
+
+/* <!---- 底層介紹區塊 ----> */
+
+.about-me-bt{
+    display: block;
+    width: 100%;
+    margin-top: 450px;
+    
+}
+
+.about-me-bt .bt-top ul{
+    display: block;
+    width: 100%;
+}
+
+.about-me-bt .bt-bot ul{
+    display: block;
+    width: 100%;
+}
+
+.bt-top-a{
+    width: 100%;
+
+    filter: grayscale(1);
+    transition: .5s;
+}
+
+.bt-top-a .pic-a h2{
+    display: inline-block;
+    font-size: 24px;
+    margin: 20px 90px;
+}
+
+.bt-top-a .pic-a p{
+    font-size: 16px;
+}
+
+.bt-top-a:hover , .bt-top-a:focus{
+    transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+}
+
+.bt-top-a:hover{
+    filter:saturate(1);
+} 
+
+.bt-top-a:hover .pic-a{
+    display: block;
+    border: 2px solid white;
+    width: 410px;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+} 
+
+.bt-top-b{
+    width: 100%;
+    height: 300px;
+    filter: grayscale(1);
+    transition: .5s;
+
+}
+
+.bt-top-b .pic-b h2{
+    display: inline-block;
+    font-size: 24px;
+    margin: 20px 90px;
+}
+
+.bt-top-b .pic-b p{
+    font-size: 16px;
+}
+
+.bt-top-b:hover , .bt-top-b:focus  {
+    transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+}
+
+.bt-top-b:hover{
+    filter:saturate(1);
+}
+
+.bt-top-b:hover .pic-b{
+    display: block;
+    border: 2px solid white;
+    width: 410px;
+    height: 300px;
+    text-align: center; 
+    margin: 0 auto;
+    box-sizing: border-box;
+} 
+
+
+.bt-bot-c{
+    width: 100%;
+    filter: grayscale(1);
+    transition: .5s;
+}
+
+.bt-bot-c .pic-c h2{
+    display: inline-block;
+    font-size: 24px;
+    margin: 20px 90px;
+}
+
+.bt-bot-c .pic-c p{
+    font-size: 16px;
+}
+
+.bt-bot-c:hover , .bt-bot-c:focus{
+    transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+}
+
+.bt-bot-c:hover{
+    filter:saturate(1);
+
+}
+
+.bt-bot-c:hover .pic-c{
+    display: block;
+    border: 2px solid white;
+    width: 410px;
+    height: 300px;
+    text-align: center; 
+    margin: 0 auto;
+    box-sizing: border-box;
+} 
+
+.bt-bot-d{
+    width: 100%;
+    filter: grayscale(1);
+    transition: .5s;
+}
+
+.bt-bot-d .pic-d h2{
+    display: inline-block;
+    font-size: 24px;
+    margin: 20px 90px;
+}
+
+.bt-bot-d .pic-d p{
+    font-size: 16px;
+}
+
+.bt-bot-d:hover , .bt-bot-d:focus  {
+    transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+}
+
+.bt-bot-d:hover{
+    filter:saturate(1);
+}
+
+.bt-bot-d:hover .pic-d{
+    display: block;
+    border: 2px solid white;
+    width: 410px;
+    height: 300px;
+    text-align: center; 
+    margin: 0 auto;
+    box-sizing: border-box;
+
+} 
+
+.bt-bot-bnt ul{
+    height: 90px;
+}
+
+.bt-bot-bnt footer{
+    font-size: 12px;
+}
+
+
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="css/reset.css"rel="stylesheet" type="new.css"/>
+    <link rel="stylesheet" href="css/new.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>hotnews_sky</title>
+</head>
+<body>
+
+<!---- 最外層包裝 開始 ---->
+<div class="new">    
+
+
+
+<!---- 主選單天 ---->  
+<nav class="top">
+    <a href="./Homelight.html"><img src="img/Homelight/logo1.png" alt="" /></a>
+    <span class="btn"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        
+    <ul class="nav">
+        <li><a href="./aboutme.html">關於我</a></li>
+        <li>
+            <a href="./photostudio.html">攝影棚介紹</a>
+            <ol>
+                <li><a href="./calendar.html">攝影棚檔期</a></li>
+            </ol>
+        </li>
+        <li><a href="./light.html">燈光器材</a></li>
+        <li><a href="./patherdolly.html">場務器材</a></li>
+        <li><a href="./contactus.html">聯絡方式</a></li>
+        <li><a href="./hotnews.html">最新消息</a></li>
+    </ul>
+</nav>
+
+
+<!---- 主視覺大圖 ---->
+
+<div class="new-pic">
+    <h1><a href="./Homelight.html">首頁</a> >> <a href="./hotnews.html">最新消息</a> >> ARRI M8</h1>
+    <img src="img/new/newsm8.jpg" alt="">    
+</div>
+
+
+<!---- 中間內容區塊 ---->
+
+<div class="new-wd">
+<div class="new-wd-top">
+    <h1>【ARRI M8 全新到貨】</h1>
+</div> 
+
+<div class="new-wd-ch" >
+    <h2>2020 / 10 / 23</h2>
+    <h3> 全新ARRI M8到貨囉!!<br>
+
+        M8配備了MAX技術——ARRI獨一無二的獲獎專利反射器設計<br>
+        ，能夠將聚光燈與PAR燈的優點合二為一。現在M8作為一<br>
+        端，而ARRIMAX 18/12作為另一端，M系列形成了全系列<br>
+        的高品質日光型照明工具，由五款先進的燈頭組成，功率<br>
+        從800 W到18000 W均勻分佈。<br>
+
+
+    <div class="rgba">魔光燈多項強大功能分別是：<br>
+
+        CCT模式：控制色溫2700K- 6500K的範圍。​<br>
+        HIS 模式：自由調出多種色彩光。<br>
+        特效模式：可模擬SOS、閃電、燭光、警車並自訂閃爍頻率。<br>
+        燈光循環：內建4秒、12秒循環，可自訂時間。<br>
+        多管連接：當連接多根燈管時，能設置主要燈管同步控制其他燈。<br>
+        APP搖控：使用南光APP控制魔光燈參數。<br></div>
+        
+    <div class="line-aa"> ---------------------------------------------------------------------</div> <br></h3>
+
+    <p>優惠期間: <br>
+    2020年10月25日~ 12月25日 <br>
+        
+
+        <div class="new-wd-bot">
+            <a href="./hotnews.html"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>
+            
+        </div>
+
+<div class="bt-bot-bnt">
+    <ul>
+        <li class="btn1"><a href="#"></a></li>
+        <li class="btn2"><a href="#"></a></li>
+        <li class="btn3"><a href="#"></a></li>
+        <li class="btn4"><a href="#"></a></li>
+        <li class="btn5"><a href="#"></a></li>
+    </ul>
+
+    <footer>Copyright © 旋轉木馬  All rights reserved.</footer> 
+
+</div>
+
+</div>
+</div>
+
+<!-- // 點擊漢堡選單 -->
+
+<script>
+document.addEventListener("click", function (e) {
+    if (e.target.closest(".fa-bars")) {
+        ham(e);
+    }
+    });
+    function ham() {
+    var header_ul = document.getElementsByClassName("nav")[0];
+    var none = header_ul.classList.contains("none");
+    console.log(none);
+    if (!none) {
+    header_ul.classList.add("none");
+    
+    
+    } else {
+        header_ul.classList.remove("none");
+    
+    }
+};
+</script>
+
+</body>
+</html>     

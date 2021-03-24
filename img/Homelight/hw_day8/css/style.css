@@ -1,0 +1,447 @@
+@import url('reset.css');
+
+body{
+	font-family: Roboto;
+	line-height: 1.6;
+	font-size: 15px;
+	background-color: #ccc;
+}
+
+.wrapper{
+	width: 1300px;
+	margin: 0 auto;
+}
+
+.header{
+	overflow: hidden;
+}
+
+/*------------ Header left (logo) -------------*/
+.left{
+	width: 300px;
+	height: 600px;
+	background-color: #333;
+	padding-top: 50px;
+	box-sizing: border-box;
+	float: left;
+}
+
+.logo{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+.left p{
+	color: white;
+	font-size: 18px;
+	writing-mode: vertical-lr;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.left span{
+	display: block;
+	width: 0px;
+	height: 100px;
+	background-color: #fff;
+	margin: 0 auto 30px auto;
+}
+
+.left ul{}
+
+.left li{}
+
+.left a{
+	display: block;
+	width: 15px;
+	height: 15px;
+	margin: 10px auto;
+}
+
+/*------------ Header rgiht (kv) -------------*/
+.kv{
+	width: 1000px;
+	height: 600px;
+	background-image: url(../img/kv_main.png);
+	float: right;
+}
+
+.kv ul{
+	float: right;
+	padding: 50px 50px 0 0;
+}
+
+.kv li{
+	float: left;
+}
+
+.kv li a{
+	display: block;
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	padding: 0 20px;
+	line-height: 50px;
+	border-top: 2px solid transparent;
+}
+
+.kv li a:hover{
+	border-top: 2px solid #fff;
+}
+
+.kv-text{
+	clear: both;
+	padding-top: 100px;
+	padding-left: 50px;
+	color: white;
+}
+
+.kv-text h1{
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.kv-text p{
+	margin-bottom: 20px;
+	margin-right: 500px;
+}
+
+.kv-text a{
+	display: block;
+	width: 150px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #e0ab5b;
+	color: white;
+	text-decoration: none;
+}
+
+/*------------ About -------------*/
+.about{
+	background-color: #222;
+	background-image: url(../img/about_bg.png);
+	height: 600px;
+	padding: 50px 0;
+	box-sizing: border-box;
+}
+
+.about h1{
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+.about h1 span{
+	color: #e0ab5b;
+}
+
+.about img{
+	float: left;
+	margin-left: 100px;
+}
+
+.about-text{
+	float: right;
+	width: 500px;
+	margin-right: 100px;
+	color: white;
+	margin-top: 50px;
+}
+
+.about-text h2{
+	font-size: 18px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+
+/*------------ Project -------------*/
+.project{
+	background-color: #222;
+	padding: 50px 0 0 0;
+	box-sizing: border-box;
+}
+
+.project h1{
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+.project span{
+	color: #e0ab5b;
+}
+
+.project ul{
+	overflow: hidden;
+}
+
+.project li{
+	float: left;
+	width: 325px;
+	height: 470px;
+	cursor: pointer;
+}
+
+.project .prj1{ background-image: url(../img/img1_mask.png); }
+.project .prj2{ background-image: url(../img/img2_mask.png); }
+.project .prj3{ background-image: url(../img/img3_mask.png); }
+.project .prj4{ background-image: url(../img/img4_mask.png); }
+
+.project .prj1:hover{ background-image: url(../img/img1.png); }
+.project .prj2:hover{ background-image: url(../img/img2.png); }
+.project .prj3:hover{ background-image: url(../img/img3.png); }
+.project .prj4:hover{ background-image: url(../img/img4.png); }
+
+.project h2{
+	color: white;
+	font-size: 18px;
+	padding: 30px 0 0 30px;
+}
+
+/*------------ Touch -------------*/
+.touch{
+	background-color: #222;
+	padding: 50px 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.touch h1{
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+.touch span{
+	color: #e0ab5b;
+}
+
+.touch .address{
+	float: left;
+	margin-left: 100px;
+	color: white;
+	margin-right: 100px;
+	line-height: 2;
+}
+
+.touch .form{
+	float: left;
+	width: 540px;
+}
+
+.touch .form li{
+	float: left;
+	width: 250px;
+	margin: 0 10px 20px 10px;
+}
+
+.touch .form input{
+	width: 250px;
+	height: 50px;
+	background-color: #545454;
+	border: 0;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+
+.touch textarea{
+	float: right;
+	width: 250px;
+	height: 80px;
+	margin-right: 100px;
+	background-color: #545454;
+	padding: 20px;
+	border: 0;
+}
+/*------------------ 414 --------------------*/
+@media screen and (max-width: 414px) {
+	
+	.wrapper{
+		width: 100vw;
+		margin: 0 auto;
+	  }
+  
+	.header{
+		  width: 100vw;
+	}
+  
+	.left{
+		  width: auto;
+		  height: 70px;
+		  float: none;
+		  padding-top: 45px;
+		  
+	}
+	.logo{
+		float: right;
+		box-sizing: border-box;
+		margin: -30px 20px 25px 0;
+		vertical-align: middle;
+		width: 50px;
+	}
+
+	.left p{
+		display:none;	
+	}
+
+	.left ul{
+		display:none;
+	}
+  
+	.kv{
+		  width: 100vw;
+		  /* clear:both; */
+		  height:auto;
+		  padding-bottom: 5vh;
+	}
+  
+	.kv ul{
+		display: none;
+	}
+
+	.kv-text{
+		width: 100%;
+		padding:30px 50px;
+		box-sizing: border-box;
+	}
+
+	.kv-text h1{
+		width: 300px;
+		font-size: 28px;
+		text-align: center;	
+	}
+
+	.kv-text p{
+		width: 305px;
+		font-size: 16px;
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 30px;
+			
+	}
+
+	.kv-text a{
+		display: block;
+		margin: 0 auto;
+	}
+
+	.about{
+		width: 100%;
+		height: 650px;
+		/* padding:30px 50px;  */
+		box-sizing: border-box;
+	}
+
+	.about h1{
+		font-size: 30px;
+		text-align: center;
+        margin-bottom: 20px;
+	}
+
+	.about img{
+		display: block;
+		margin: 0 30px;
+		padding-bottom: 20px;
+		width: 350px;	
+	}
+
+	.about-text{
+		width: 100%;
+		float: none;
+		box-sizing: border-box;
+			
+	}
+
+	.about h2{
+		font-size: 18px;
+		text-align: center;
+		width: 350px;
+		padding: 0 30px;
+		margin-bottom: 40px;	
+	}
+
+	.about p{
+		font-size: 12px;
+		text-align: center;
+		padding: 0 30px;
+	}
+
+	.project{
+		width: 100%;
+		box-sizing: border-box;
+		
+	} 
+
+	.project h1{
+		font-size: 30px;
+		margin-bottom: 20px;	
+	} 
+
+	.project li{
+		width: 180px;
+		height: 230px;
+		margin: 13px 0 0 13px;
+		border: 3px solid white;
+		
+	}
+
+	.project li h2{
+		margin-top: 70px;
+		margin-left: 20px;
+		font-size: 20px;
+		font-weight: bold;
+		color: orange;
+	}
+
+	.touch{
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.touch .address{
+		float: none;
+		margin: 0 30px;
+		font-size: 20px;
+		text-align: center;
+		
+	}
+
+
+	.touch .form{
+		width: 380px;
+		float: none;
+		margin: 0 auto;
+	}
+
+	.touch .form li{
+		float: none;
+		width: 350px;
+		margin-top: 20px;
+	}
+
+	.touch .form input{
+		width: 350px;
+		height: 50px;
+		
+	}
+
+	.touch textarea{
+	    float: none;
+		margin: 0 30px;
+		width: 310px;
+		
+	}
+
+
+
+
+}

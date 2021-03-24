@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="css/reset.css"rel="stylesheet" type="聯絡方式.css"/>
+    <link rel="stylesheet" href="css/contactus.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>contactus</title>
+</head>
+<body>
+
+<!---- 最外層包裝 開始 ---->
+
+<div class="wrapper">
+  <div class="wrapper-a">
+
+
+
+<!---- 主選單天 ---->  
+<nav class="top">
+  <a href="./Homelight.html"><img src="img/Homelight/logo1.png" alt="" /></a>
+  <span class="btn"><i class="fa fa-bars" aria-hidden="true"></i></span>
+  
+  <ul class="nav">
+      <li><a href="./aboutme.html">關於我</a></li>
+      <li>
+          <a href="./photostudio.html">攝影棚介紹</a>
+          <ol>
+              <li><a href="./calendar.html">攝影棚檔期</a></li>
+          </ol>
+      </li>
+      <li><a href="./light.html">燈光器材</a></li>
+      <li><a href="./patherdolly.html">場務器材</a></li>
+      <li><a href="./contactus.html">聯絡方式</a></li>
+      <li><a href="./hotnews.html">最新消息</a></li>
+  </ul>
+</nav>
+
+<!---- 主視覺大圖 ---->
+
+<div class="main-ver">
+    <h1><a href="./Homelight.html">首頁</a> >> 聯絡方式</h1>
+    <img src="img/contactus/home-bg-pic.jpg" alt="">    
+
+</div>
+
+
+<!---- 聯絡區塊 ---->
+
+<div class="callus">
+  <h1>聯絡我們</h1>
+  <h2>旋轉木馬影音工作室</h2>
+  <p>地址：114 台北市內湖區內湖路一段288巷<br>
+      電話：02-2695-8888 <br>
+      傳真：02-2695-8889 <br> 
+      E-MALL：bensoen@carousel.com</p>
+</div>
+
+
+<!---- 地圖區塊 ---->
+
+<div class="line"></div>
+
+<div id="map">
+  <h1>We are here</h1>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.6237969023223!2d121.56651961433184!3d25.080736983950494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDA0JzUwLjEiTiAxMjHCsDM0JzA3LjMiRQ!5e0!3m2!1szh-TW!2stw!4v1605948246181!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+
+
+<!---- 輸入區塊 ---->
+
+<div class="line"></div>
+<div class="enter">
+    
+    <div class="formcon">
+        <h1>諮詢表單</h1>
+    </div>
+
+<div class="from">
+  <div class="form-top">
+    <div class="a">
+    <h2 class="firstname">First Name *</h2>
+    <div class="task_add_block">
+      <input type="text" class="task_name" >  
+    </div>
+  </div>
+  
+  <div class="b">
+    <h2 class="lestname">Last Name *</h2>
+    <div class="lest_add_block">
+      <input type="text" class="lest_name" >  
+    </div>
+  </div> 
+</div>  
+
+    <h2 class="emalladd">Email Address *</h2>
+    <div class="mail_add_block">
+      <input type="text" class="mail_name" >  
+    </div>
+
+    <h2 class="message">Message *</h2>
+    <div class="mess_add_block">
+      <input type="text" class="mess_name" >  
+    </div>
+
+    <a href="#">SUBMIT</a>
+  </div> 
+</div>
+    
+<div class="bt-bot-bnt">
+  <ul>
+      <li class="btn1"><a href="#"></a></li>
+      <li class="btn2"><a href="#"></a></li>
+      <li class="btn3"><a href="#"></a></li>
+      <li class="btn4"><a href="#"></a></li>
+      <li class="btn5"><a href="#"></a></li>
+  </ul>
+
+  <footer>Copyright © 旋轉木馬  All rights reserved.</footer>
+
+
+
+
+</div>
+</div>
+
+<!-- // 點擊漢堡選單 -->
+
+<script>
+  document.addEventListener("click", function (e) {
+      if (e.target.closest(".fa-bars")) {
+          ham(e);
+      }
+      });
+      function ham() {
+      var header_ul = document.getElementsByClassName("nav")[0];
+      var none = header_ul.classList.contains("none");
+      console.log(none);
+      if (!none) {
+          header_ul.classList.add("none");
+  
+  
+      } else {
+          header_ul.classList.remove("none");
+  
+      }
+  };
+  
+  </script>
+
+
+
+
+</body>
+</html>    

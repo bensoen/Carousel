@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="css/reset.css"rel="stylesheet" type="hotnews.css"/>
+    <link rel="stylesheet" href="css/hotnews.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> 
+    <title>hotnews</title>
+</head>
+
+<body>
+<!---- 最外層包裝 開始 ---->
+ <div class="wrappernews">
+    <div class="wrapper-h">
+
+
+<!---- 主選單天 ---->  
+<nav class="top">
+  <a href="./Homelight.html"><img src="img/Homelight/logo1.png" alt="" /></a>
+  <span class="btn"><i class="fa fa-bars" aria-hidden="true"></i></span>
+  <span id="gotop"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></span>      
+      
+  <ul class="nav">
+      <li><a href="./aboutme.html">關於我</a></li>
+      <li>
+          <a href="./photostudio.html">攝影棚介紹</a>
+          <ol>
+              <li><a href="./calendar.html">攝影棚檔期</a></li>
+          </ol>
+      </li>
+      <li><a href="./light.html">燈光器材</a></li>
+      <li><a href="./patherdolly.html">場務器材</a></li>
+      <li><a href="./contactus.html">聯絡方式</a></li>
+      <li><a href="./hotnews.html">最新消息</a></li>
+  </ul>
+
+  
+
+  
+</nav>
+
+<!---- 主視覺大圖 ---->
+
+     <div class="news-bgpic">
+       <img src="img/hotnews/hotnews-bigpic.jpg" alt=""> 
+
+     </div> 
+
+<!---- 中間消息區塊 ---->
+
+     <div clsss="newswap">
+
+        <div class="news-a">
+            <ul>
+               <li>
+                  <img src="img/hotnews/news01.jpg" alt="">
+                <div class="news-a-wd">  
+                  <h1>Outsight sky 全新到貨</h1>
+                  <i class="fa fa-calendar" aria-hidden="true">  2020-11-30</i>
+                  <p>全新Outsight系列LED到貨，歡迎訂班。</p>
+                  <a href="hotnews_sky.html">閱讀更多</a>
+                </div>
+               </li> 
+            </ul>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="news-b">
+            <ul>
+               <li>
+                   <img src="img/hotnews/news02.jpg" alt="">   
+                <div class="news-b-wd">  
+                   <h1>ARRI M8 全新到貨</h1>
+                   <i class="fa fa-calendar" aria-hidden="true">  2020-10-23</i>
+                  <p>全新ARRI M8到貨，歡迎訂班。</p>
+                  <a href="hotnews_m8.html">閱讀更多</a>
+                </div>
+               </li> 
+            </ul>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="news-c">
+            <ul>
+               <li>  
+                <img src="img/hotnews/news03.jpg" alt="">
+                <div class="news-c-wd">   
+                <h1>攝影棚出租優惠</h1>
+                <i class="fa fa-calendar" aria-hidden="true">  2020-07-13</i>
+                  <p>即日起攝影棚租借九折優惠，詳情請內洽</p>
+                  <a href="./new01.html">閱讀更多</a>
+                </div>
+               </li> 
+            </ul>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="news-d">
+            <ul>
+               <li>
+                  <img src="img/hotnews/news04.jpg" alt="">
+                 <div class="news-d-wd">  
+                  <h1>南冠全彩4尺2尺燈管組</h1>
+                  <i class="fa fa-calendar" aria-hidden="true">  2020-06-13</i>
+                  <p>全新全彩LED燈管，可調整LEE色溫功能，歡迎訂班。</p>
+                  <a href="hotnews_rgbled.html">閱讀更多</a>
+                </div>
+               </li> 
+            </ul>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="news-e">
+            <ul>
+               <li>
+                  <img src="img/hotnews/news05.jpg" alt="">
+                 <div class="news-e-wd"> 
+                  <h1>新型30CM電動轉盤</h1>
+                  <i class="fa fa-calendar" aria-hidden="true">  2020-06-02</i>
+                  <p>全新改款電動轉盤，歡迎訂班。</p>
+                  <a href="hotnews_rgbled.html">閱讀更多</a>
+                </div> 
+               </li> 
+            </ul>
+        </div>
+
+        <div class="line"></div>
+
+        <!---- 底層區塊 ---->
+
+        <div class="bt-bot-bnt">
+            <ul>
+              <li class="btn1"><a href="#"></a></li>
+              <li class="btn2"><a href="#"></a></li>
+              <li class="btn3"><a href="#"></a></li>
+              <li class="btn4"><a href="#"></a></li>
+              <li class="btn5"><a href="#"></a></li>
+         </ul>
+
+         <footer>Copyright © 旋轉木馬  All rights reserved.</footer> 
+
+
+
+        </div>    
+
+
+
+     </div>
+
+ </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- // 點擊漢堡選單 -->
+    
+<script>
+ document.addEventListener("click", function (e) {
+ if (e.target.closest(".fa-bars")) {
+     ham(e);
+ }
+ });
+ function ham() {
+ var header_ul = document.getElementsByClassName("nav")[0];
+ var none = header_ul.classList.contains("none");
+ console.log(none);
+ if (!none) {
+     header_ul.classList.add("none");
+
+
+ } else {
+     header_ul.classList.remove("none");
+
+ }
+};
+
+// top鈕
+$("#gotop").click(function(){
+    jQuery("html,body").animate({
+        scrollTop:0
+    },800);
+});
+$(window).scroll(function() {
+    if ( $(this).scrollTop() > 400){
+        $('#gotop').fadeIn("fast");
+    } else {
+        $('#gotop').stop().fadeOut("fast");
+    }
+});
+
+
+ 
+</script>
+
+
+</body>
+</html>    
